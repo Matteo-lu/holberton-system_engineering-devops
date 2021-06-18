@@ -9,10 +9,10 @@ do
 		echo "FizzBuzz"
 	elif  [[ 0 -eq "($n%5)" ]]
 	then
-		echo "Fizz"
+		echo "Buzz"
 	elif  [[ 0 -eq "($n%3)" ]]
 	then
-		echo "Buzz"
+		echo "Fizz"
 	else
 		echo "$n"
 	fi
