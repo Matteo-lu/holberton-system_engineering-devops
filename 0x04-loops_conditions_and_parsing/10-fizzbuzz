@@ -1,16 +1,16 @@
 #!/usr/bin/env bash
-# This script is displaying "Holberton School" 10 times with a condition
+# This script taht displays numbers from 1 to 100.
 n=1
 
 while [ $n -le 100 ]
 do
-	if  [[ 0 -eq "($n%3) + ($n%5)" ]]
+	if  [[ 0 -eq $((n%15)) ]]
 	then
 		echo "FizzBuzz"
-	elif  [[ 0 -eq "($n%5)" ]]
+	elif  [[ 0 -eq $((n%5)) ]]
 	then
 		echo "Buzz"
-	elif  [[ 0 -eq "($n%3)" ]]
+	elif  [[ 0 -eq $((n%3)) ]]
 	then
 		echo "Fizz"
 	else
