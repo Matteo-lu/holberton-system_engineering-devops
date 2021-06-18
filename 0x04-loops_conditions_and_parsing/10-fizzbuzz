@@ -4,7 +4,7 @@ n=1
 
 while [ $n -le 100 ]
 do
-	if  [[ 0 -eq "($n%15)" ]]
+	if  [[ 0 -eq "($n%3) + ($n%5)" ]]
 	then
 		echo "FizzBuzz"
 	elif  [[ 0 -eq "($n%5)" ]]
