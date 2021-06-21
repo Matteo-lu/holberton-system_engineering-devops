@@ -1,9 +1,8 @@
 #!/usr/bin/env bash
 # This script displays To infinity and beyond indefinitely.
-#!/bin/bash
 
 trap "echo I hate the kill command" SIGTERM
-trap "Y U no love me?!" SIGINT
+trap "echo Y U no love me?!" SIGINT
 trap "rm var/run/holbertonscript.pid" SIGQUIT exit
 while :
 do
