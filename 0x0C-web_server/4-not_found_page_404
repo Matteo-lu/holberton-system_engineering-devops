@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+# script that configure your Nginx server so that /redirect_me is redirecting to another page
+sudo apt-get update
+sudo apt-get -y upgrade
+sudo apt-get -y install nginx
+sudo chmod 666 /var/www/html/index.nginx-debian.html
+echo "Holberton School" > /var/www/html/index.nginx-debian.html
+sudo touch /usr/share/nginx/html/error_404.html
+sudo chmod 666 /usr/share/nginx/html/error_404.html
+echo "Ceci n'est pas une page" > /usr/share/nginx/html/error_404.html
+sudo chmod 666 /etc/nginx/sites-available/default
+echo "server {
+        listen 80 default_server;
+        listen [::]:80 default_server;
+		root /var/www/html;
+		index index.html index.htm index.nginx-debian.html;
+
+		error_page 404 /error_404.html;
+		location = /error_404.html {
+			root /usr/share/nginx/html;
+			internal;
+		}
+
+        server_name _;
+        rewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4/ permanent;
+
+        location / {
+                # First attempt to serve request as file, then
+                # as directory, then fall back to displaying a 404.
+                try_files $uri $uri/ =404;
+        }
+	}" > /etc/nginx/sites-available/default
+sudo service nginx start
