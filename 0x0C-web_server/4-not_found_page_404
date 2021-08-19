@@ -5,29 +5,10 @@ sudo apt-get -y upgrade
 sudo apt-get -y install nginx
 sudo chmod 766 /var/www/html/index.nginx-debian.html
 echo "Holberton School" > /var/www/html/index.nginx-debian.html
-sudo touch /var/www/html/error_404.html
-sudo chmod 766 /var/www/html/error_404.html
-echo "Ceci n'est pas une page" > /var/www/html/error_404.html
-sudo chmod 766 /etc/nginx/sites-available/default
-echo "server {
-        listen 80 default_server;
-        listen [::]:80 default_server;
-
-		root /var/www/html;
-
-		index index.html index.htm index.nginx-debian.html;
-
-		error_page 404 /error_404.html;
-		location = /error_404.html {
-			root /var/www/html;
-			internal;
-		}
-
-        server_name _;
-        rewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4/ permanent;
-
-        location / {
-                try_files $uri $uri/ =404;
-        }
-	}" > /etc/nginx/sites-available/default
+sudo touch /usr/share/nginx/html/error_404.html
+sudo chmod 766 /usr/share/nginx/html/error_404.html
+echo "Ceci n'est pas une page" > /usr/share/nginx/html/error_404.html
+sudo chmod u+w /etc/nginx/sites-available/default
+sudo sed -i '/server_name _;/ a \\trewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;' /etc/nginx/sites-available/default
+sudo sed -i '/index index.html index.htm index.nginx-debian.html;/ a \\n\terror_page 404 / error_404.html;\n\t\tlocation = /error_404.html {\n\t\t\troot /usr/share/nginx/html;\n\t\t\tinternal;\n\t\t}' /etc/nginx/sites-available/default
 sudo service nginx restart
