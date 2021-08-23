@@ -8,7 +8,7 @@ echo "Holberton School" > /var/www/html/index.nginx-debian.html
 sudo touch /usr/share/nginx/html/error_404.html
 sudo chmod 766 /usr/share/nginx/html/error_404.html
 echo "Ceci n'est pas une page" > /usr/share/nginx/html/error_404.html
-sudo chmod u+w /etc/nginx/sites-available/default
+sudo chmod 766 /etc/nginx/sites-available/default
 sudo sed -i '/server_name _;/ a \\trewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;' /etc/nginx/sites-available/default
-sudo sed -i '/index index.html index.htm index.nginx-debian.html;/ a \\n\terror_page 404 / error_404.html;\n\t\tlocation = /error_404.html {\n\t\t\troot /usr/share/nginx/html;\n\t\t\tinternal;\n\t\t}' /etc/nginx/sites-available/default
+sudo sed -i '/root \/var\/www\/html;/ a \\n\terror_page 404 /error_404.html;\n\t\tlocation = /error_404.html {\n\t\troot /usr/share/nginx/html;\n\t\tinternal;\n\t\t}' /etc/nginx/sites-available/default
 sudo service nginx restart
