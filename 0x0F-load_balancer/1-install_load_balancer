@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# script that configure Haproxy with roundrobin
+sudo apt-get update
+sudo apt-get -y upgrade
+apt-get install --no-install-recommends software-properties-common
+add-apt-repository ppa:vbernat/haproxy-2.0
+apt-get install haproxy=2.0.\*
+sudo chmod 766 /etc/haproxy/haproxy.cfg
+sudo sed -i '/errorfile 504 \/etc\/haproxy\/errors\/504.http/ a \\nfrontend myfronted\n\tbind *:80\n\tdefault_backend my_servers' /etc/haproxy/haproxy.cfg
+sudo sed -i '/default_backend my_servers/ a \\nbackend my_servers\n\tbalance roundrobin\n\tserver server1 35.229.127.214:80\n\tserver server2 3.89.225.59:80' /etc/haproxy/haproxy.cfg
+sudo service haproxy restart
