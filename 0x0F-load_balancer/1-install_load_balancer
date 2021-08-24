@@ -2,8 +2,6 @@
 # script that configure Haproxy with roundrobin
 sudo apt-get update
 sudo apt-get -y upgrade
-apt-get install --no-install-recommends software-properties-common
-add-apt-repository ppa:vbernat/haproxy-2.0
 apt-get install haproxy=2.0.\*
 sudo chmod 766 /etc/haproxy/haproxy.cfg
 sudo sed -i '/errorfile 504 \/etc\/haproxy\/errors\/504.http/ a \\nfrontend myfronted\n\tbind *:80\n\tmode http\n\tdefault_backend my_servers' /etc/haproxy/haproxy.cfg
