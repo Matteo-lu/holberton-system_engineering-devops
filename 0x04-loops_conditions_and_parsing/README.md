@@ -1,6 +1,6 @@
 <h1 class="gap">0x04. Loops, conditions and parsing</h1><div class="gap" id="project-description">
 <h2>Background Context</h2>
-<p><a href="https://youtu.be/BC2neyc5GcI" target="_blank"><img alt="" src="https://holbertonintranet.s3.amazonaws.com/uploads/medias/2019/6/b07e3333b1edfb9beed5.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIARDDGGGOUWMNL5ANN%2F20210904%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20210904T211349Z&amp;X-Amz-Expires=86400&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=ad5de408a744d61bf2d038e6bdd62af19df1d427315e5a52ff8441d95a40494f" style=""/></a></p>
+<p><a href="https://youtu.be/BC2neyc5GcI" target="_blank"><img alt="" src="https://holbertonintranet.s3.amazonaws.com/uploads/medias/2019/6/b07e3333b1edfb9beed5.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIARDDGGGOUWMNL5ANN%2F20210904%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20210904T211615Z&amp;X-Amz-Expires=86400&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=e64d93906c334792039ca60e7ecb4fc20b34d3d85003827efee111641a2dfc8c" style=""/></a></p>
 <h2>Resources</h2>
 <p><strong>Read or watch</strong>:</p>
 <ul>
@@ -55,4 +55,4 @@
 <br/>
 <img alt="" src="https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/251/ubHWxDU.png" style=""/></p>
 <p>For every feedback, Shellcheck will provide a code that you can use to get more information about the issue, for example for code <code>SC2034</code>, you can browse <a href="/rltoken/1SeRQAUtYIpfXXIQeD1PFQ" target="_blank" title="https://github.com/koalaman/shellcheck/wiki/SC2034">https://github.com/koalaman/shellcheck/wiki/SC2034</a>.</p>
-</div>
+</div>actualization
