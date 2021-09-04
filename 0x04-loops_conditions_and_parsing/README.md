@@ -1,6 +1,6 @@
 <h1 class="gap">0x04. Loops, conditions and parsing</h1><div class="gap" id="project-description">
 <h2>Background Context</h2>
-<p><a href="https://youtu.be/BC2neyc5GcI" target="_blank"><img alt="" src="https://holbertonintranet.s3.amazonaws.com/uploads/medias/2019/6/b07e3333b1edfb9beed5.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIARDDGGGOUWMNL5ANN%2F20210904%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20210904T210843Z&amp;X-Amz-Expires=86400&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=16b1c89f8540723b53b0d1a8321a70de6d4b2d5292a1c1e532aaa1a4e21334de" style=""/></a></p>
+<p><a href="https://youtu.be/BC2neyc5GcI" target="_blank"><img alt="" src="https://holbertonintranet.s3.amazonaws.com/uploads/medias/2019/6/b07e3333b1edfb9beed5.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIARDDGGGOUWMNL5ANN%2F20210904%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20210904T211349Z&amp;X-Amz-Expires=86400&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=ad5de408a744d61bf2d038e6bdd62af19df1d427315e5a52ff8441d95a40494f" style=""/></a></p>
 <h2>Resources</h2>
 <p><strong>Read or watch</strong>:</p>
 <ul>
