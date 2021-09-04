@@ -61,4 +61,4 @@
 <h2>More Info</h2>
 <p>Read your <code>/etc/passwd</code> and <code>/etc/shadow</code> files.</p>
 <p>Note: You do not have to learn about <code>fmt</code>, <code>pr</code>, <code>du</code>, <code>gzip</code>, <code>tar</code>, <code>lpr</code>, <code>sed</code> and <code>awk</code> yet.</p>
-</div>
+</div>actualization
