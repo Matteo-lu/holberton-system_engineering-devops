@@ -1,6 +1,6 @@
 <h1 class="gap">0x0A. Configuration management</h1><div class="gap" id="project-description">
 <h2>Background Context</h2>
-<p><a href="https://youtu.be/ogYLFyp68cI" target="_blank"><img alt="" src="https://holbertonintranet.s3.amazonaws.com/uploads/medias/2019/6/6a0a8024f2b1c47a9d1e.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIARDDGGGOUWMNL5ANN%2F20210904%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20210904T210855Z&amp;X-Amz-Expires=86400&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=74d719ad1330167bf79345a49ed7cee300844674cd3ef52c6a70768ce80be8f7" style=""/></a></p>
+<p><a href="https://youtu.be/ogYLFyp68cI" target="_blank"><img alt="" src="https://holbertonintranet.s3.amazonaws.com/uploads/medias/2019/6/6a0a8024f2b1c47a9d1e.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIARDDGGGOUWMNL5ANN%2F20210904%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20210904T211625Z&amp;X-Amz-Expires=86400&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=9eb9c97f4b8c37e95e0dc8b25e642e0bad97ce82eff6c0710f6716060157d2b4" style=""/></a></p>
 <p>When I was working for SlideShare, I worked on an auto-remediation tool called <a href="/rltoken/ftFvBjxNPLoWcF9eHaK8yw" target="_blank" title="Skynet">Skynet</a> that monitored, scaled and fixed Cloud infrastructure. I was using a parallel job-execution system called MCollective that allowed me to execute commands to one or multiple servers at the same time. I could apply an action to a selected set of servers by applying a filter such as the server’s hostname or any other metadata we had (server type, server environment…). At some point, a bug was present in my code that sent <code>nil</code> to the filter method. </p>
 <p>There were 2 pieces of bad news:</p>
 <ol>
@@ -40,4 +40,4 @@
 <pre><code>$ apt-get install -y ruby
 $ gem install puppet-lint -v 2.1.1
 </code></pre>
-</div>
+</div>actualization
