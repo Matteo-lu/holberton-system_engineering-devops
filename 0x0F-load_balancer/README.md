@@ -27,4 +27,4 @@
 <li>The first line of all your Bash scripts should be exactly <code>#!/usr/bin/env bash</code></li>
 <li>The second line of all your Bash scripts should be a comment explaining what is the script doing</li>
 </ul>
-</div>
+</div>actualization
