@@ -14,4 +14,4 @@
 <li>The second line of all your Bash scripts should be a comment explaining what is the script doing</li>
 <li>You are not allowed to use <code>wget</code></li>
 </ul>
-</div>
+</div>actualization
