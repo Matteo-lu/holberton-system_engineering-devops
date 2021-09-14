@@ -31,4 +31,4 @@ if __name__ == "__main__":
         user_dict['name'], done_counter, tasks_counter))
 
     for title in name_task:
-        print('\t{}'.format(title))
+        print('\t {}'.format(title))
