@@ -21,7 +21,7 @@ if __name__ == "__main__":
 
     name_task = []
     data = []
-    user_name = user_dict['name']
+    user_name = user_dict['username']
     for task in tasks_list:
         task_name = task['completed']
         task_title = task['title']
