@@ -28,7 +28,7 @@ if __name__ == "__main__":
         data = [user_id, user_name, task_name, task_title]
         name_task.append(data)
 
-    with open(user_id + '.csv', 'w', encoding='UTF8', newline='', quoting=csv.QUOTE_ALL) as f:
-        writer = csv.writer(f)
+    with open(user_id + '.csv', 'w', encoding='UTF8', newline='') as f:
+        writer = csv.writer(f, quoting=csv.QUOTE_ALL)
 
         writer.writerows(name_task)
