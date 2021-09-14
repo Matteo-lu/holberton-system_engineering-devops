@@ -20,9 +20,9 @@ if __name__ == "__main__":
     tasks_list = task_info.json()
 
     name_task = {}
-    data = {}
     my_list = []
     for task in tasks_list:
+        data = {}
         data['task'] = task['title']
         data['completed'] = task['completed']
         data['username'] = user_dict['username']
