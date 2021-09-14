@@ -22,7 +22,7 @@ if __name__ == "__main__":
         for task in tasks_list:
             task_dict = {}
             if user_id == task['userId']:
-                task_dict['username'] = user['name']
+                task_dict['username'] = user['username']
                 task_dict['task'] = task['title']
                 task_dict['completed'] = task['completed']
                 tasks_element.append(task_dict)
