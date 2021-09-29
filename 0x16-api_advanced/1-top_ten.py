@@ -20,4 +20,4 @@ def top_ten(subreddit):
             if count == 10:
                 break
     else:
-        return (None)
+        print (None)
